@@ -1,0 +1,79 @@
+.burger{
+    position: fixed;
+    top: 12px;
+    right: 10px;
+    width: fit-content;
+    &__btn{
+        position: relative;
+        width: 40px;
+        height: 20px;
+        padding: 0;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        &::before,
+        &::after{
+            content: ' ';
+            display: block;
+            width: 100%;
+            height: 2px;
+            border-radius: 10px;
+            position: absolute;
+            background-color: #fff;
+            left: 0;
+            transition: all .3s;
+        }
+        &::before{
+            top: 0;
+        }
+        &::after{
+            bottom: 0;
+        }
+        &:hover{
+            &::before,
+            &::after{
+                background: transparent linear-gradient(180deg, #E52E2D 0%, #F51211 100%) 0% 0% no-repeat padding-box;
+            }
+            &::before{
+                width: 20px;
+            }
+            &::after{
+                width: 30px;
+            }
+            & span{
+                width: 100%;
+                background: transparent linear-gradient(180deg, #E52E2D 0%, #F51211 100%) 0% 0% no-repeat padding-box;
+            }
+        }
+    }
+    & span{
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        display: block;
+        background-color: #fff;
+        border-radius: 10px;
+        left: 0;
+        top: 41%;
+        transform: translate(0, 50%);
+        transition: all .3s;
+    }
+    
+
+/*     &.open{
+        & span{
+            display: none;
+        }
+        &::before{
+            transform: rotate(45deg);
+            top: 10px;
+        }
+        &::after{
+            transform: rotate(-45deg);
+            bottom: 9px;
+        }
+    } */
+}
+/* @media(max-width: 767px){
+    
+} */

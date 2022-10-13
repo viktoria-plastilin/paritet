@@ -1,0 +1,128 @@
+.nav{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 105;
+    transition: left .4s;
+    & a{
+        color: #0F1127;
+        font-size: 18px;
+        line-height: 26px;
+        padding: 5px 0;
+    }
+    & li{
+        margin-bottom: 10px;
+        overflow: hidden;
+        height: 40px;
+        display: block;
+        /* &:hover{
+            animation: rotate .3s ease 1;
+        } */
+    }
+    & .nav__link{
+        display: block;
+/*         &::after{
+            content: attr(data-element);
+            width: 100%;
+            height: 49px;
+            display: inline-block;
+        } */
+
+    }
+    & .nav__list{
+        padding: 20px 10px;
+    }
+    & .nav__work{
+        padding: 0 10px;
+        & a{
+            color: #0F1127;
+        }
+        & span{
+            color: #9D9DA3;
+            font-size: 14px;
+            line-height: 28px;
+            display: block;
+        }
+    }
+    & .header__call{
+        width: 100%;
+        border-radius: 0;
+    }
+    & .btn-cross{
+        opacity: 0;
+        position: absolute;
+        right: -45px;
+        top: 20px;
+    }
+    &.open{
+        left: 0;
+        transition: left .4s;
+        & .btn-cross{
+            opacity: 1;
+            transition: opacity .9s;
+        }
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .nav{
+        & .nav__list-box{
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        & a{
+            font-size: 24px;
+            line-height: 28px;
+            padding: 10px 0;
+        }
+        & li{
+            padding-bottom: 20px;
+        }
+        & .nav__work{
+            display: none;
+        }
+        &.open{
+            left: 0;
+            & .btn-cross{
+                right: 40px;
+                top: 40px;
+                opacity: 1;
+                transition: opacity .3s;
+                &::before,
+                &::after{
+                    background-color: rgb(126, 125, 125);
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .nav{
+        & .header__call{
+            display: none
+        }
+    }
+}
+
+/* From:perspective(400px) rotateX(0deg)To:perspective(400px) rotateX(360deg) */
+
+@keyframes rotate {
+    from {
+        transform: translate3d(0, 100%, 0);
+      }
+    
+    to {
+    transform: translate3d(0, 0, 0);
+    }
+}
+

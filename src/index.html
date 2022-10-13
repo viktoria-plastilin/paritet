@@ -1,0 +1,540 @@
+    @@include('./templates/main-header.html', { 'lang': 'ru', 'title': 'Новый проект' })
+
+    <div class="main-wrapper">
+        <div class="shadow-box"></div>
+        <header class="header">
+            <div class="container js-nav-open">
+                
+                <div class="logo js-logo">
+                    <img src="./assets/images/logo.svg" alt="логотип Паритет">
+                </div>
+
+                <div class="header__box">
+                    <div class="work js-work">
+                        <a href="tel:+73494292228">+7 (3494) 29 22 28</a>
+                        <span>Пн - Пт: 09:00 - 18:00</span>
+                    </div>
+                    <button class="header__call header__call--desktop js-open-popup" data-popup-name="popup-2" type="button"><span>Заказать звонок</span> </button>
+                </div>
+                
+
+                <div class="burger">
+                    <button class="burger__btn js-burger"><span></span></button>
+                </div>
+                
+            </div>
+
+            <nav class="nav js-nav" data-close="nav">
+                <div class="nav__list-box">
+                    <ul class="nav__list">
+                        <li><a class="nav__link" href="#" data-element="Рассчитать стоимость">Рассчитать стоимость</a></li>
+                        <li><a class="nav__link" href="#" data-element="Преимущества">Преимущества</a></li>
+                        <li><a class="nav__link" href="#" data-element="Услуги">Услуги</a></li>
+                        <li><a class="nav__link" href="#" data-element="Партнеры">Партнеры</a></li>
+                        <li><a class="nav__link" href="#" data-element="Консультация">Консультация</a></li>
+                        <li><a class="nav__link" href="#" data-element="О компании">О компании</a></li>
+                        <li><a class="nav__link" href="#" data-element="Контакты">Контакты</a></li>
+                    </ul>
+                </div>
+    
+                <div class="nav__box">
+                    <div class="nav__work work">
+                        <a href="tel:+73494292228">+7 (3494) 29 22 28</a>
+                        <span>Пн - Пт: 09:00 - 18:00</span>
+                    </div>
+                    <button class="header__call js-open-popup" type="button" data-popup-name="popup-2">Заказать звонок</button>
+                </div>
+    
+                
+                <button class="btn-cross js-nav__cross" type="button"></button>
+            </nav>
+            <!-- кнопка Позвонить -->
+            <button class="btn-call js-call-fix js-open-popup" data-popup-name="popup-2"></button>
+        </header>
+        
+
+        <!-- Page -->
+        <div class="wrapper">
+
+            <main class="page" data-desktop="false">
+                <div class="page__wrapper">
+
+                    <!-- 1 page -->
+                    <div class="page__screen page__screen--first page__screen--img screen"  style="background-image: url(./assets/images/background/backgr-1.jpg);">
+                        <div class="screen__content">
+                            <div class="container">
+                                <div class="title title--main page__screen--width">
+                                    <h1 class="title__h">Проектирование систем безопасности</h1>
+                                    <p class="title__p">Узнайте стоимость проектирования систем безопасности за <span class="title__p--blue">2 минуты</span> </p>
+                                </div>
+
+                                <button class="btn btn--icon js-open-popup" type="button" data-popup-name="popup-2">Рассчитать стоимость</button>
+                            </div>
+                            <div class="big-img" style="background-image: url(./assets/images/background/camera.png);">
+                                <!-- <img src="./assets/images/background/camera.png" alt="камера"> -->
+                            </div>
+                            <div class="container">
+                                <ul class="list">
+                                    <li>
+                                        <div class="list__img">
+                                            <img src="./assets/images/list-1.png" alt="часы">
+                                        </div>
+                                        <p class="list__text">
+                                            Выполнение работ точно в срок
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div class="list__img">
+                                            <img src="./assets/images/list-2.png" alt="книга">
+                                        </div>
+                                        <p class="list__text">
+                                            Гарантия прохождения экспертизы МЧС
+                                        </p>
+                                    </li>
+                                </ul>
+                            
+                            </div>
+                            
+                        </div>
+                    <!--  <div class="screen__body">
+                            <div class="screen__image">
+                                <img src="./assets/images/background/backgr-1.jpg" alt="">
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <!-- 2 page -->
+                    <div class="page__screen page__screen--services screen" style="background-color: #0A0C1B">
+                        <div class="screen__content">
+                            <div class="container">
+                                <div class="title">
+                                    <h1 class="title__h">Предоставляем услуги</h1>
+                                    <p class="title__p">От установки пожарной сигнализации до консалтинга</p>
+                                </div>
+
+                                <ul class="services">
+                                    <li>
+                                        <div class="services__box">
+                                            <h4>Проектирование систем пожарной сигнализации</h4>
+                                            <button class="btn btn--arrow" type="button"><span>Подробнее</span></button>
+                                        </div>
+                                        <div class="services__img">
+                                            <img src="./assets/images/services/s-1.jpg" alt="фото - Проектирование систем пожарной сигнализации">
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="services__box">
+                                            <h4>Проектирование систем видеонаблюдения</h4>
+                                            <button class="btn btn--arrow" type="button"><span>Подробнее</span></button>
+                                        </div>
+                                        <div class="services__img">
+                                            <img src="./assets/images/services/s-2.jpg" alt="фото - Проектирование систем видеонаблюдения">
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="services__box">
+                                            <h4>Проектирование систем антитеррор</h4>
+                                            <button class="btn btn--arrow" type="button"><span>Подробнее</span></button>
+                                        </div>
+                                        <div class="services__img">
+                                            <img src="./assets/images/services/s-3.jpg" alt="фото - Проектирование систем антитеррор">
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="services__box">
+                                            <h4>Проектирование локальных систем</h4>
+                                            <button class="btn btn--arrow" type="button"><span>Подробнее</span></button>
+                                        </div>
+                                        <div class="services__img">
+                                            <img src="./assets/images/services/s-4.jpg" alt="фото - Проектирование локальных систем">
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="services__box">
+                                            <h4>Проектирование систем оповещения о пожаре</h4>
+                                            <button class="btn btn--arrow" type="button"><span>Подробнее</span></button>
+                                        </div>
+                                        <div class="services__img">
+                                            <img src="./assets/images/services/s-5.jpg" alt="фото - Проектирование систем оповещения о пожаре">
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="services__box">
+                                            <h4>Проектирование систем оповещения ГО и ЧС</h4>
+                                            <button class="btn btn--arrow" type="button"><span>Подробнее</span></button>
+                                        </div>
+                                        <div class="services__img">
+                                            <img src="./assets/images/services/s-6.jpg" alt="фото - Проектирование систем оповещения ГО и ЧС">
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="services__box">
+                                            <h4>Проектирование систем телефонии</h4>
+                                            <button class="btn btn--arrow" type="button"><span>Подробнее</span></button>
+                                        </div>
+                                        <div class="services__img">
+                                            <img src="./assets/images/services/s-7.jpg" alt="фото - Проектирование систем телефонии">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 page -->
+                    <div class="page__screen page__screen--order page__screen--img screen">
+                        <div class="screen__content" style="background: linear-gradient(13deg, rgb(26 47 122) 16%, rgb(113 55 99) 40%, rgb(164 68 69) 83%);">
+                            <div class="container">
+                                <div class="title">
+                                    <h1 class="title__h">Закажите консультацию</h1>
+                                    <p class="title__p">Оставьте заявку, наши специалисты помогут с выбором</p>
+                                </div>
+
+                                <form action="#" class="order">
+                                    <label class="order__ladel"> <!-- класс error при ошибки заполнения-->
+                                        <span class="order__label-error">
+                                            Обязательное поле
+                                        </span>
+                                        <span class="order__label-name">
+                                            Имя*
+                                        </span>
+                                        <input type="text" class="order__input">
+                                    </label>
+                                    <label class="order__ladel">
+                                        <span class="order__label-error">
+                                            Обязательное поле
+                                        </span>
+                                        <span class="order__label-name">
+                                            Телефон*
+                                        </span>
+                                        <input type="tel" class="order__input tell-input">
+                                    </label>
+                                    <div class="custom">
+                                        <input type="checkbox" class="custom-checkbox" id="politic1">
+                                        <label for="politic1"><span>Я согласен с условиями <a href="#">политики конфиденциальности</a></span> </label>
+                                    </div>
+
+                                    <button class="btn" type="submit">Отправить</button>
+                                </form>
+                            </div>
+                            <div class="big-img" style="background-image: url(./assets/images/phone.png);">
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- 4 page -->
+                    <div class="page__screen page__screen--about screen">
+                        <div class="screen__content">
+                            <div class="container">
+                                <div class="title">
+                                    <h1 class="title__h">О компании</h1>
+                                    <div class="title__p">
+                                        <p>Паритет — это, прежде всего люди. Свою деятельность компания начала с 2012 года с 
+                                        формирования команды профессионалов по линии разработки и установки систем безопасности. </p>
+                                        
+                                        <p>В настоящее время «Паритет» самостоятельно разрабатывает и устанавливает полную систему 
+                                        безопасности учреждений в различных сферах жизни общества. В нашу зону деятельности входят 
+                                        организации для детей, учреждения культуры, банки, газовые промыслы, 
+                                        промышленные предприятия и многие другие. Мы одинаково профессионально относимся к заказам разного уровня и масштаба. </p>
+                                        
+                                        <p>На сегодняшний день Паритет, динамично развивающаяся, многопрофильная компания, стремящаяся 
+                                        к достижению лидирующих позиций рынке. Наши специалисты быстро и профессионально подберут для Вас оптимальные решения.</p>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./assets/images/about.png" alt="фото-строители">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5 page -->
+                    <div class="page__screen screen page__screen--doc doc">
+                        <div class="screen__content">
+                            <div class="container">
+                                <div class="title">
+                                    <h1 class="title__h">Документы</h1>
+                                    <div class="title__p">
+                                        У нас есть все необходимые лицензии и допуски для работы
+                                    </div>
+                                </div>
+                                <div class="screen__doc-btn">
+                                    <button class="btn btn--arrow doc-slider__prev"></button>
+                                    <button class="btn btn--arrow doc-slider__next"></button>
+                                </div>
+                            </div>
+                            <div class="doc-container">
+                                <div class="screen__doc">
+                                    <div class="doc-slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <!-- Slides -->
+                                            <div class="swiper-slide">
+                                                <div class="doc-slider__img">
+                                                    <a href="./assets/images/doc/1.jpg" class="glightbox" data-gallery="gallery1">
+                                                        <img src="./assets/images/doc/1.jpg" alt="документ">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="doc-slider__img">
+                                                    <a href="./assets/images/doc/2.jpg" class="glightbox" data-gallery="gallery1">
+                                                        <img src="./assets/images/doc/2.jpg" alt="документ">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="doc-slider__img">
+                                                    <a href="./assets/images/doc/3.jpg" class="glightbox" data-gallery="gallery1">
+                                                        <img src="./assets/images/doc/3.jpg" alt="документ">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="doc-slider__img">
+                                                    <a href="./assets/images/doc/2.jpg" class="glightbox" data-gallery="gallery1">
+                                                        <img src="./assets/images/doc/2.jpg" alt="документ">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="doc-slider__img">
+                                                    <a href="./assets/images/doc/2.jpg" class="glightbox" data-gallery="gallery1">
+                                                        <img src="./assets/images/doc/2.jpg" alt="документ">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="doc-slider__img">
+                                                    <a href="./assets/images/doc/2.jpg" class="glightbox" data-gallery="gallery1">
+                                                        <img src="./assets/images/doc/2.jpg" alt="документ">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="doc-slider__img">
+                                                    <a href="./assets/images/doc/2.jpg" class="glightbox" data-gallery="gallery1">
+                                                        <img src="./assets/images/doc/2.jpg" alt="документ">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- 6 page -->
+                    <div class="page__screen page__screen--footer screen">
+                        <div class="screen__content">
+                            <footer>
+                                <div class="container">
+                                    <div class="title">
+                                        <h1 class="title__h">Контакты</h1>
+                                    </div>
+                                    
+                                    <div class="footer">
+                                        <div class="footer__wrapper">
+                                            <div class="footer__box">
+                                                <p class="footer__name">629307, ЯНАО, г. Новый Уренгой, ул. Губкина, 28</p>
+                                                <div class="footer__text">
+                                                    <span>Пн-Чт: 9:00 - 18:00 (Перерыв 12:30-14:00)</span>
+                                                    <span>Пт: 09:00 - 15:00 (без перерыва)</span>
+                                                    <span>Сб: 10:00 - 12:00, Вс: выходной</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="footer__box">
+                                                <a href="emale:paritet@paritet.Nu">paritet@paritet.Nu</a>
+                                                <div class="footer__text">
+                                                    <span>Присылайте вопросы на почту в любое время</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="footer__box">
+                                                <a href="tel:+73494292228">+7 (3494) 29 22 28</a>
+                                                <div class="footer__text">
+                                                    <span>Пн - Пт: 09:00 - 18:00</span>
+                                                    <span>Сб - Вс: выходной</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="footer__icons">
+                                                <div class="footer__icons-r">
+                                                    <a href="#" class="vk">
+                                                        <svg width="22" height="13.066" viewBox="0 0 22 13.066">
+                                                            <use xlink:href="assets/images/svg-sprite/svg-sprite.svg#vk"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="#" class="ig">
+                                                        <svg width="22" height="22" viewBox="0 0 22 22">
+                                                            <use xlink:href="assets/images/svg-sprite/svg-sprite.svg#ig"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="#" class="yt">
+                                                        <svg width="22" height="15.616" viewBox="0 0 22 15.616">
+                                                            <use xlink:href="assets/images/svg-sprite/svg-sprite.svg#yt"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="#" class="tiktok">
+                                                        <svg width="19.469" height="22" viewBox="0 0 19.469 22">
+                                                            <use xlink:href="assets/images/svg-sprite/svg-sprite.svg#tiktok"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="#" class="fb">
+                                                        <svg width="11.395" height="22" viewBox="0 0 11.395 22">
+                                                            <use xlink:href="assets/images/svg-sprite/svg-sprite.svg#fb"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                                <div class="footer__icons-b">
+                                                    <a href="#" class="tg">
+                                                        <svg width="22" height="18.137" viewBox="0 0 22 18.137">
+                                                            <use xlink:href="assets/images/svg-sprite/svg-sprite.svg#tg"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="#" class="wa">
+                                                        <svg width="21.976" height="22" viewBox="0 0 21.976 22">
+                                                            <use xlink:href="assets/images/svg-sprite/svg-sprite.svg#wa"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="#" class="viber">
+                                                        <svg width="21.284" height="22" viewBox="0 0 21.284 22">
+                                                            <use xlink:href="assets/images/svg-sprite/svg-sprite.svg#viber"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="map" class="map">
+                                            <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU">
+                                            </script>
+                                        </div>
+
+                                        <div class="footer__bottom">
+                                            <span>2022© ООО «Паритет», все права защищены</span>
+                                            <div class="footer__politic">
+                                                <a href="#" class="politic-link">Политика конфиденциальности</a>
+                                            </div>
+                                            <span>
+                                                Разработка сайта:
+
+                                                <a href="https://plastilin-art.ru/" class="plastilin">
+                                                    <svg width="93.859" height="20" viewBox="0 0 93.859 20">
+                                                        <use class="svg" xlink:href="assets/images/svg-sprite/svg-sprite.svg#plastilin"></use>
+                                                    </svg>
+                                                </a>
+
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <div class="page__pagination"></div>
+                <!-- <div class="page__scroll"></div> -->
+            </main>
+
+        </div>
+    <!-- / Page -->
+
+    </div>
+
+
+
+<!-- Popup -->
+<div class="body__popup popup js-popup" data-popup-name="popup-1">
+    <div class="popup__box">
+        <div class="popup__window">
+            <button class="popup__button js-popup__button" type="button"></button>
+            <div class="title">
+                <h1 class="title__h">Спасибо за заявку</h1>
+                <p class="title__p">Заявка успешно отправлена! Наши специалисты свяжутся с Вами в ближайшее время.</p>
+            </div>
+            <button class="btn js-popup__button" type="button">Ok</button>
+        </div>
+    </div>
+</div> 
+<!-- Popup order -->
+<div class="body__popup body__popup-order popup js-popup" data-popup-name="popup-2">
+    <div class="popup__box">
+        <div class="popup__window">
+            <button class="popup__button js-popup__button" type="button"></button>
+            <div class="title">
+                <h1 class="title__h">Заказать услугу</h1>
+                <p class="title__p">Оставьте заявку, наши специалисты помогут с выбором</p>
+            </div>
+            <form action="#" class="order">
+                <label class="order__ladel"> <!-- класс error при ошибки заполнения-->
+                    <span class="order__label-error">
+                        Обязательное поле
+                    </span>
+                    <span class="order__label-name">
+                        Имя*
+                    </span>
+                    <input type="text" class="order__input">
+                </label>
+                <label class="order__ladel">
+                    <span class="order__label-error">
+                        Обязательное поле
+                    </span>
+                    <span class="order__label-name">
+                        Фамилия*
+                    </span>
+                    <input type="text" class="order__input">
+                </label>
+                <label class="order__ladel">
+                    <span class="order__label-error">
+                        Обязательное поле
+                    </span>
+                    <span class="order__label-name">
+                        Телефон*
+                    </span>
+                    <input type="tel" class="order__input tell-input">
+                </label>
+                <label class="order__ladel">
+                    <span class="order__label-error">
+                        &nbsp;
+                    </span>
+                    <span class="order__label-name">
+                        Email
+                    </span>
+                    <input type="text" class="order__input">
+                </label>
+                <label class="order__ladel order__ladel--width">
+                    <span class="order__label-error">
+                        &nbsp;
+                    </span>
+                    <span class="order__label-name">
+                        Комментарий
+                    </span>
+                    <input type="text" class="order__input">
+                </label>
+                <div class="custom">
+                    <input type="checkbox" class="custom-checkbox politic" id="politic2" >
+                    <label for="politic2"><span>Я согласен с условиями <a href="#">политики конфиденциальности</a></span> </label>
+                </div>
+
+                <button class="btn js-popup__button" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div> 
+
+<!-- <button class="button js-open-popup" data-popup-name="popup-1">Открыть Popup 1</button> -->
+
+    @@include('./templates/main-footer.html')

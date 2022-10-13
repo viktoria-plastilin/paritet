@@ -1,0 +1,25 @@
+.btn-cross{
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    z-index: 105;
+    &::before,
+    &::after{
+        content: ' ';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+    }
+    &::before{
+        transform: translateY(-50%) rotate(45deg);
+    }
+    &::after {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+}
