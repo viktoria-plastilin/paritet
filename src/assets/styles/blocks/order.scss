@@ -1,0 +1,176 @@
+.order{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    & .order__input{
+        width: 100%;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.363);
+        color: #fff;
+        font-size: 16px;
+        line-height: 28px;
+        padding-top: 5px;
+        padding-right: 20px;
+        outline: #470e11;
+        transition: border-color .3s;
+        &:hover{
+            border-color: #fff;
+        }
+    }
+    & input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        /* display: none; <- Crashes Chrome on hover */
+        -webkit-appearance: none;
+        margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    }
+    & .order__ladel{
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 30px;
+        display: block;
+        position: relative;
+        &:focus-within{
+            & .order__label-name{
+                top: 0;
+                font-size: 10px;
+            }
+        }
+        &.error{
+            & .order__label-error{
+                opacity: 1;
+            }
+            &::after{
+                position: absolute;
+                content: ' ';
+                bottom: 5px;
+                right: 0;
+                display: block;
+                width: 18px;
+                height: 14px;
+                background: url(./../images/error.png) center / auto no-repeat;
+            }
+        }
+        &.filled{
+            & .order__label-name{
+                top: 0;
+                font-size: 10px;
+            }
+            &::after{
+                position: absolute;
+                content: ' ';
+                bottom: 5px;
+                right: 0;
+                display: block;
+                width: 18px;
+                height: 14px;
+                background: url(./../images/check.png) center / auto no-repeat;
+            }
+        }
+    }
+    & .order__label-error{
+        font-size: 10px;
+        opacity: 0;
+    }
+    & .order__label-name{
+        position: absolute;
+        left: 0;
+        top: 20px;
+        transition: all .3s;
+    }
+    & .custom{
+        margin-bottom: 45px;
+        & a{
+            color: #fff;
+            border-bottom: 1px solid #fff;
+            display: block;
+            transition: border-bottom .3s;
+            &:hover{
+                border-bottom: 1px solid transparent;
+            }
+        }
+        & span{
+            line-height: 28px;
+        }
+    }
+}
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: flex-start;
+    user-select: none;
+}
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd77;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    margin-top: 8px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    cursor: pointer;
+    transition: border-color .3s;
+}
+.custom-checkbox:checked+label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url(./../images/check-white.svg);
+}
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #b3d7ff;
+}
+
+@media (min-width: 768px) {
+    .order{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        & .custom{
+            order: 1;
+            margin-bottom: 0;
+            margin-left: 20px;
+            font-size: 14px;
+            line-height: 22px;
+            width: 66%;
+            & a{
+                display: inline;
+            }
+            & .custom-checkbox+label::before{
+                margin-top: 4px;
+            }
+        }
+        & .order__ladel{
+            width: 49%;
+        }
+        & .btn{
+            width: auto;
+            margin: 0;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .order{
+        & .custom{
+            width: 56%;
+        }
+    }
+}
+@media (min-width: 1700px) {
+    .order{
+        & .custom{
+            width: 70%;
+        }
+    }
+}

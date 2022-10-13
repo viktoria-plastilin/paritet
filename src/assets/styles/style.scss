@@ -1,0 +1,36 @@
+// style.scss
+@import './fonts.scss';
+// Style
+
+@import './reset.scss';
+
+// plagins
+
+@import './plugins/swiper.scss';
+@import './plugins/simplebar.scss';
+@import './plugins/fullpage.scss';
+@import './plugins/glightbox.scss';
+
+// Blocks
+
+@import './blocks/burger.scss';
+@import './blocks/main-styles.scss';
+@import './blocks/header.scss';
+@import './blocks/fullpage.scss';
+@import './blocks/title.scss';
+@import './blocks/btn.scss';
+@import './blocks/big-img.scss';
+@import './blocks/list.scss';
+@import './blocks/services.scss';
+@import './blocks/order.scss';
+@import './blocks/doc-slider.scss';
+@import './blocks/popup.scss';
+@import './blocks/btn-call.scss';
+@import './blocks/nav.scss';
+@import './blocks/work.scss';
+@import './blocks/doc.scss';
+@import './blocks/btn-cross.scss';
+@import './blocks/footer.scss';
+@import './blocks/map.scss';
+
+

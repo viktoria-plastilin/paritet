@@ -1,0 +1,190 @@
+// popup.scss
+
+// Popup
+
+.body{
+    & .body__popup {
+        position: fixed;
+        overflow: auto;
+        left: 0;
+        top: 0;
+        display: none;
+        width: 100%;
+        height: 100%;
+
+        &--active {
+            display: block;
+        }
+    }
+}
+
+.popup {
+    background: rgba(48, 48, 47, 0.123);
+    z-index: 105;
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 100%;
+    }
+
+    &__window {
+        position: relative;
+        width: 100%;
+        max-width: 768px;
+        padding: 30px;
+        border-radius: 10px;
+        background: #FFF;
+        color: #0F1127;
+        margin: 0 10px;
+        & .title{
+            margin-bottom: 20px;
+            & .title__h{
+                font-size: 22px;
+                line-height: 40px;
+                margin-bottom: 0;
+            }
+            & .title__p{
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+
+    &__button {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: block;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        background: none;
+        box-shadow: none;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        
+        &::before,
+        &::after {
+            content: ' ';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            height: 2px;
+            background: rgba(58, 58, 58, 0.541);
+        }
+
+        &::before {
+            transform: translateY(-50%) rotate(45deg);
+        }
+
+        &::after {
+            transform: translateY(-50%) rotate(-45deg);
+        }
+    }
+    &.body__popup-order{
+        & .popup__window{
+            height: 100vh;
+            overflow: auto;
+            border-radius: 0%;
+            margin: 0;
+            padding: 30px 10px;
+        }
+        & .order{
+            margin: 0;
+            & .order__ladel{
+                margin-bottom: 10px;
+            }
+            & .order__input{
+                border-bottom: 1px solid rgba(145, 144, 144, 0.568);
+                color: #0F1127;
+                &:hover{
+                    border-color: rgb(77, 76, 76);
+                }
+            }
+            & .custom{
+                & a{
+                    color: #2E58C5;
+                    border-bottom: 1px solid #2E58C5;
+                    &:hover{
+                        border-bottom: 1px solid transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .popup{
+        & .popup__window {
+            width: 425px;
+            & .title{
+                margin-bottom: 20px;
+                & .title__h{
+                    font-size: 22px;
+                    line-height: 40px;
+                }
+                & .title__p{
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+        }
+        &.body__popup-order{
+            & .popup__window{
+                height: auto;
+                overflow: visible;
+                border-radius: 10px;
+                padding: 30px 40px;
+                width: 645px;
+            }
+            & .order{
+                margin: 0;
+                & .order__ladel{
+                    margin-bottom: 10px;
+                    &--width{
+                        width: 100%;
+                    }
+                }
+                & .order__input{
+                    border-bottom: 1px solid rgba(145, 144, 144, 0.568);
+                    color: #0F1127;
+                    &:hover{
+                        border-color: rgb(77, 76, 76);
+                    }
+                }
+                & .custom{
+                    order: 0;
+                    width: 100%;
+                    margin-left: 0;
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .popup{
+        & .popup__window {
+            & .title{
+                & .title__h{
+                    font-size: 30px;
+                    line-height: 40px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        &.body__popup-order{
+            & .popup__window{
+                width: 750px;
+            }
+        }
+    }
+}
