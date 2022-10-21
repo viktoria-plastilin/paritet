@@ -21,7 +21,6 @@
         overflow: hidden;
         height: 40px;
         display: block;
-        width: 500px;
         position: relative;
         &:hover .nav__link{
             top: -40px;
@@ -95,9 +94,9 @@
             line-height: 28px;
             padding: 10px 0;
         }
-/*         & li{
-            padding-bottom: 20px;
-        } */
+        & li{
+            width: 500px;
+        }
         & .nav__work{
             display: none;
         }
