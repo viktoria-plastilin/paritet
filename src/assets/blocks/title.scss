@@ -1,0 +1,55 @@
+.title{
+    &__h{
+        font-size: 34px;
+        line-height: 46px;
+        margin-bottom: 30px;
+        font-weight: 400;
+    }
+    &__p{
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+    }
+    & .title__p--blue{
+        color: #2E58C5;
+    }
+    &--main{
+        & .title__h{
+            font-size: 36px;
+            line-height: 52px;
+        }
+        & .title__p{
+            font-size: 20px;
+            line-height: 36px;
+        }
+    }
+    
+}
+@media (min-width: 768px) {
+    .title{
+        &__h{
+            font-size: 50px;
+            line-height: 90px;
+        }
+        &--main{
+            & .title__h{
+                font-size: 52px;
+                line-height: 72px;
+            }
+        }
+        &__p{
+            padding-right: 30px;
+        }
+        
+    }
+}
+@media(min-width:1700px){
+    .title{
+        &--main{
+            & .title__h{
+                font-size: 70px;
+                line-height: 90px;
+            }
+        }
+    }
+}

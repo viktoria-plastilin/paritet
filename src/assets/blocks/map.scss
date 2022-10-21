@@ -1,0 +1,21 @@
+.map{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    & .ymaps-2-1-79-image {
+        &:hover{
+            background-color: aqua;
+        }
+    }
+}
+
+[class*="copyrights-pane"] {
+	display: none !important;
+}
+@media (min-width: 1700px) {
+    .map{
+        height: 400px;
+    }
+}

@@ -1,0 +1,86 @@
+// body.scss
+.svg{
+    --color-white: #fff;
+}
+/* .svg:hover{
+    --color-white: #e55030;
+} */
+.plastilin:hover{
+    border-bottom: 1px solid transparent !important;
+    .svg{
+        --color-white: #e55030;
+    }
+}
+
+// Body
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1;
+    font-weight: 400;
+    background-color: #0b0d1c;
+}
+.container{
+    padding: 0 10px;
+}
+.main-wrapper{
+    position: relative;
+}
+.shadow-box{
+    width: 100%;
+    background: rgba(19,24,48,1);
+    background: linear-gradient(221deg, rgba(172,39,48,1) 0%, rgba(19,24,48,1) 6%);
+    &.open{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 100;
+    }
+}
+.body{
+    &.overflow{
+        overflow: hidden;
+    }
+}
+.politic-link{
+    color: #fff;
+    display: inline-block;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #fff;
+    line-height: 18px;
+    transition: all .3s;
+    &:hover{
+        border-bottom: 1px solid transparent;
+    }
+}
+@media (min-width:768px){
+    .container{
+        padding: 0 20px 0 82px;
+        width: 732px;
+        margin: 0 auto;
+    }
+    .shadow-box{
+        background: rgba(5, 5, 5, 0.233);
+    }
+}
+
+@media (min-width:1200px){
+    .container{
+        padding: 0 20px 0 88px;
+        width: 1144px;
+    }
+    .shadow-box{
+        height: 100vh;
+    }
+}
+@media (min-width:1700px){
+    .container{
+        /* padding: 0 20px 0 88px;
+        width: 1644px; */
+        padding: 0 20px 0 130px;
+        width: 1775px;
+    }
+}
