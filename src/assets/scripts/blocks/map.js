@@ -15,6 +15,8 @@ window.app.map = () => {
             iconImageOffset: [-20, -70]
         });
 
+        
+
         map.controls.remove('geolocationControl'); // удаляем геолокацию
         map.controls.remove('searchControl'); // удаляем поиск
         map.controls.remove('trafficControl'); // удаляем контроль трафика
@@ -25,6 +27,17 @@ window.app.map = () => {
         //map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
 
         map.geoObjects.add(placemark);
+
+        placemark.events.add('mouseenter', function (e) {
+            e.get('target').options.set('iconImageHref', './assets/images/geo-hover.svg');
+            e.get('target').options.set('iconImageSize', [74, 70]); //меняется ширина иконки
+            e.get('target').options.set('iconImageOffset', [-25, -70]); //меняется позиционирование
+        })
+        placemark.events.add('mouseleave', function (e) {
+            e.get('target').options.set('iconImageHref', './assets/images/geo.svg');
+            e.get('target').options.set('iconImageSize', [65, 70]);
+            e.get('target').options.set('iconImageOffset', [-20, -70]);
+        });
     }
     
 
